@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sdm.sdm_rpg_world.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "sdm_rpg_world.refmap.json",
+  "mixins": [
+    "BlockMixin",
+    "ChunkGenerationMixin",
+    "ChunkMapMixin",
+    "CommandsMixin",
+    "LootTableMixin",
+    "PlayerMixin",
+    "StructureStartMixin",
+    "curio.GuiEventHandlerMixin",
+    "jade.OverlayRendererMixin",
+    "journeymap.MiniMapMixin",
+    "passiveskilltree.PassiveSkillTreeAdditionsGuiMixin",
+    "sanity.SanityProcessorMixin",
+    "thirsty.PlayerThirstMixin",
+    "thirsty.ThirstBarRendererMixin"
+  ],
+  "client": [
+    "MinecraftMixin",
+    "sanity.SanityGuiHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
